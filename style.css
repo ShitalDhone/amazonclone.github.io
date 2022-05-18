@@ -7,20 +7,41 @@
 :root{
     --background_nav: black;
     --color: #cd9042;
-    --color1: white
+    --color1: white;
+    --color2: black;
 }
 
 .d-flex{
     display: flex;
+    
 }
+.c-flex{
+    opacity: 0.8;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    /* font-size: 15px; */
+    width: 100%;
+    height: 100%;
+    padding: 7.5px;
+    align-items: center;
+    
+}
+
+
     
 /* global classes */
 ul{
     list-style: none;
+   
     
 }
 a{
    text-decoration: none;
+   color: var(--color1);
+   font-weight: bold;
+   align-items: center;
 }
 
 /* global classes */
@@ -31,6 +52,7 @@ nav{
     background-color: var(--background_nav);
     padding: 5px 10px;
     align-items: center;
+
     
    
     }
@@ -39,25 +61,41 @@ nav{
        width: 100px;
        margin: 10px 15px 0;
        }
+
+      
     
   nav .search{
-     flex: 1;
-    
-     
-  }
+    flex: 1;
+    margin-right: 20px;
+    }
+
+
+   
 
     nav .search input{
-        width: 100%;
+        width: 50%;
         padding: 10px;
         border: none;
+       /* margin-left: 15px; */
+      
         
 }
+
+nav .search select{
+   margin-left: 15rem;
+   margin-right: 0rem;
+
+}
+    
+   
+
 
 nav .search i{
  background-color: var(--color);
  padding: 10px;
  
 }
+
 
 nav .nav_menu{
     justify-content: space-evenly;
